@@ -93,6 +93,10 @@ section h1{
 
 .section-showcase img{
 	width:100%;
+	position:relative;
+	float:right;
+	margin-right:-500px;
+	
 }
 
 .section-default{
@@ -118,6 +122,166 @@ section h1{
 	font-size:1.5em;
 	
 }
+
+.fa-white{
+	color:#fff;
+}
+
+.fa-lg{
+	font-size:4em;
+}
+
+.content-icons{
+	text-align:center;
+}
+
+
+.content-icons h4{
+	color:#fff;
+	
+}
+
+.content-icons i{
+	display:block;
+	margin-bottom:15px;
+}
+
+.content-devices{
+	text-align:center;
+}
+
+.content-devices img{
+	position:relative;
+}
+
+.content-devices img#desktop{
+	width:375px;
+}
+
+.content-devices img#laptop{
+	margin-left:-95px;
+	z-index:100;
+	width:290px;
+}
+
+.content-devices img#mobile{
+	z-index:100;
+	width:190px;
+}
+
+
+
+#footer-main{
+	background:#406c96;
+	color:#fff;
+	border-top:#333 8px solid;
+	padding:40px 0;
+}
+
+#footer-main h4, #footer-main a{
+	color:#fff;
+}
+
+#footer-main li{
+	list-style:square;
+	line-height:2em;
+}
+
+.animate{
+	-moz-transition:1s ease-in-out;
+	-webkit-transition:1s ease-in-out;
+	transition:1s ease-in-out;
+	
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	
+	-moz-animation-duration:1s;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+}
+
+img#main.animate{
+	-moz-transform:translate(-40em, 0);
+	-webkit-transform:translate(-40em, 0);
+	transform:translate(-40em, 0);
+}
+
+img#laptop.animate{
+	-moz-transform:translate(12em, 0);
+	-webkit-transform:translate(12em, 0);
+	transform:translate(12em, 0);
+}
+
+img#mobile.animate{
+	-moz-transform:translate(-8em, 0);
+	-webkit-transform:translate(-8em, 0);
+	transform:translate(-8em, 0);
+}
+
+@media(min-width:601px) and (max-width:960px){
+	.content-devices img#desktop{
+		width:273px;
+	}
+
+	.content-devices img#laptop{
+		width:235px;
+	}
+
+	.content-devices img#mobile{
+		width:148px;
+	}
+}
+
+@media(max-width:600px){
+	.content-devices img#desktop{
+		width:263px;
+	}
+
+	.content-devices img#laptop{
+		display:none;
+	}
+
+	.content-devices img#mobile{
+		display:none;
+	}
+}
+
+@media(max-width:762px){
+	h1{
+		font-size:35px !important;
+		text-align:center !important
+	}
+	
+	h2{
+		font-size:25px !important;
+		text-align:center !important;
+		display:block !important;
+		line-height:1.5em !important;
+	}
+	
+	.content-icons i{
+		margin-top:20px !important;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

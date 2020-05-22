@@ -23,7 +23,7 @@
 
   <body>
 
-    <div class="navbar  navbar-fixed-top" role="navigation">
+    <div class="navbar  navbar-fixed-top navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -72,24 +72,104 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h1>Clean Techie Template</h1> 
-					<h2 class="highlight-primary">Aliquam erat volutpat nullam quis nibs</h2>
+					<h1>One Life</h1> 
+					<h2 class="highlight-primary">Health Comes First</h2>
 					<ul class="list-feature margin-top-30">
-						<li><i class="fa fa-bar-chart"></i>Fusce vitae lorem</li>
-						<li><i class="fa fa-desktop"></i>Vitae purus commodo</li>
-						<li><i class="fa fa-database"></i>Dapibus pellentesque posuere</li>
-						<li><i class="fa fa-lightbulb-o"></i>Eros sit amet ultrices</li>
+						<li><i class="fa fa-bar-chart"></i>Exercising</li>
+						<li><i class="fa fa-desktop"></i>Healthy Food</li>
+						<li><i class="fa fa-database"></i>Meditation@Relaxation</li>
+						<li><i class="fa fa-lightbulb-o"></i>Learning</li>
 						
 					</ul>
 				</div>
 				<div class="col-md-4">
-					<img src="img/imac.png">
+					<img id="main" src="img/imac.png">
 				
 				</div>
 				
 			</div>
 		</div>
 	</section>
+	
+	<section class="section-primary content-icons">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h4>
+						<i class="fa fa-cogs fa-white fa-lg"></i>
+						Easily Customizable
+					</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						<i class="fa fa-html5 fa-white fa-lg"></i>
+						HTML5 Markup
+					</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						<i class="fa fa-indent fa-white fa-lg"></i>
+						Responsive
+					</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>
+						<i class="fa fa-send fa-white fa-lg"></i>
+						Lightweight
+					</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-devices scroll300 padding-bottom-40">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Repetitio Est Mater Studiorum</h1>
+					<img id="laptop" src="img/laptop.png">
+					<img id="desktop" src="img/desktop.png">
+					<img id="mobile" src="img/mobile.png">					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>Our Products</h4> 
+					<ul>
+						<li class="app-appstore"><a href="#">App Store</a></li>
+						<li class="app-play"><a href="#">Google Play Store</a></li>
+						<li class="app-droid"><a href="#">Android Market</a></li>
+						<li class="app-Windows"><a href="#">Windows</a></li>
+						<li class="app-chrome"><a href="#">Chrome Web Store</a></li>						
+					</ul>
+				</div>
+				<div class="col-md-4">
+				<h4>Our Products</h4> 
+					<ul>
+						<li><a href="#">What We Do</a></li>
+						<li><a href="#">Why Choose Us</a></li>
+						<li><a href="#">Advertise With Us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Web Development</a></li>						
+					</ul>									
+				</div>
+				<div class="col-md-4">
+				<h4>Our Products</h4> 
+					<ul>
+						<li><a href="#">Support Home</a></li>
+						<li><a href="#">Our Community</a></li>
+						<li><a href="#">Send A Ticket</a></li>
+						<li><a href="#">Contact</a></li>					
+					</ul>									
+				</div>						
+			</div>
+		</div>
+	</footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -97,5 +177,37 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#main').addClass('animate');
+			$(window).scroll(function(){
+				var y = $(this).scrollTop();
+				
+				if(y >= 200){
+					$('#laptop').addClass('animate');
+					$('#mobile').addClass('animate');
+				}
+				
+				if(y < 200){
+					$('#laptop').removeClass('animate');
+					$('#mobile').removeClass('animate');
+				}
+			});
+		});
+	</script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
